@@ -1,0 +1,307 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.blocPrincipaleAccueil{
+  width:80vw;
+  flex-wrap: wrap;
+  display:flex;
+  justify-content: center;
+}
+
+.blocAlbum{
+  margin:4vw 2vw;
+  display: flex;
+  width:20vw;
+  height:40vh;
+  flex-direction: column;
+  align-items: center;
+cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blocAlbum:hover{
+  transform: scale(1.05);
+}
+
+.textCoverAlbum{
+  margin:1vw 1vw;
+  font-size: 75%;
+
+}
+
+.imgAlbum{
+  width:20vw;
+}
+
+.imgGenre{
+  width: 20vw;
+  height: 20vw;
+}
+
+.flecheRetour{
+  transform: rotate(-180deg);
+  width: 4vw;
+  height: 4vw;
+  cursor: pointer;
+}
+
+.blocRetour{
+  display: flex;
+  width: 100%;
+align-items: center;
+  gap:2%;
+}
+
+.blocInfoArti{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blocGenreD{
+  width: 100vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container {
+  width:100vw;
+  flex-wrap: wrap;
+  display:flex;
+  justify-content: center;
+}
+
+.album-cover {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.album-info .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.album-info .artist {
+  font-size: 1.5em;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+}
+
+.track-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-list li:last-child {
+  border-bottom: none;
+}
+
+.track-list .track-name {
+  font-size: 1.2em;
+}
+
+.track-list .track-duration {
+  color: #aaa;
+}
+
+.button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.blocTracks{
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #888888;
+  margin:1vw 0;
+  border-radius: 5px;
+}
+
+.playButton{
+  width: 3vw;
+  height: 3vw;
+  object-fit: cover;
+  cursor: pointer;
+  margin:1vw 1vw;
+}
+
+.blocPlayer{
+  display: flex;
+  align-items: center;
+}
+
+.description{
+  font-size: 1vw;
+  width:30vw;
+}
+
+.blocLink{
+  width:30vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 250px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar::placeholder {
+  color: #ccc;
+}
+
+.imgArtiste{
+  width:20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.blocWait{
+  width:100vw;
+  height:100vh;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:10;
+  -webkit-backdrop-filter:blur(5.6px);
+  backdrop-filter:blur(5.6px);
+  background-color:rgba(128,128,128,.4)
+}
+
+.bio{
+  cursor: pointer;
+  transition: text-decoration 1s ease-in-out;
+}
+
+.bio:hover{
+  text-decoration: underline;
+}
+
+.blocBio{
+  background-color: #232323;
+  border-radius: 8px;
+  padding: 20px;
+  width:70vw;
+  height:60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBio{
+  font-size: 1vw;
+}
+
+.artisteName{
+  font-size:2vw;
+}
+
+.artisteDesc{
+  font-size: 1.5vw;
+}
+
+.searchBtn{
+  padding: 1px!important;
+  border-radius: 50%;
+  width:3vw;
+  height: 3vw;
+  font-size: 1.6vw;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.searchBar{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  color:white!important;
+}
+
+a:hover{
+  color: #7c7c7c!important;
+}
