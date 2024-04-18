@@ -6,7 +6,7 @@ Ce projet exploite une API hébergée localement via Docker, permettant une gest
 my_spotify permet aux utilisateurs de parcourir, de rechercher et d'écouter une collection de musique stockée dans une base de données propre. 
 L'API, hébergée à l'aide de Docker, facilite les interactions avec la base de données pour une expérience fluide et réactive.
 
-Le front-end est développé en utilisant des technologies modernes web tandis que l'API back-end est gérée par un service Docker, 
+Le front-end est développé en utilisant React.js tandis que l'API back-end est gérée par un service Docker, 
 assurant une maintenance et une mise à l'échelle aisées.
 
 
@@ -18,4 +18,4 @@ This project leverages a locally hosted API via Docker, allowing for customized 
 my_spotify allows users to browse, search, and listen to a collection of music stored in a proprietary database. 
 The API, hosted using Docker, facilitates database interactions for a smooth and responsive experience.
 
-The front-end is developed using modern web technologies while the back-end API is managed by a Docker service, ensuring easy maintenance and scalability.
+The front-end is developed using React.js while the back-end API is managed by a Docker service, ensuring easy maintenance and scalability.
